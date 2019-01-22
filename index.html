@@ -60,4 +60,27 @@ table {
     <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHTbwStdUBzmtvMgJKw1csgqVQnG8cGC3dHqXK5WM7dFMvAePxDsa0MFQ:
                          https://upload.wikimedia.org/wikipedia/commons/f/fc/Mandel_zoom_08_satellite_antenna.jpg">
 
+    
+    
+    var xPositions = [];
+var yPositions = [];
+
+draw = function() {
+
+
+
+    xPositions.push(random(0,400));
+    yPositions.push(0);
+    
+    background(204, 247, 255);
+
+    for (var i = 0; i < xPositions.length; i++) {
+        noStroke();
+        fill(0, 200, 255);
+        ellipse(xPositions[i], yPositions[i], 10, 10);
+        yPositions[i] += 5;
+    }
+    
+};
+                                          
 </body>
