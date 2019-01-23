@@ -1,31 +1,23 @@
-<!DOCTYPE html>
 <style>
 
 body{
     background-color: rgb(109, 120, 255); 
-    }
+}
 
 #image {
     width: 350px;
     margin-left: 10px;
-    }
+}
     
 td, th {
   border: 1px solid rgb(0,0,0);   
   width: 150px;  
-    }
+}
     
 table {
-    background-color: rgb(177, 200, 255);
+    background-color: purple;
     margin: 10px;
 }    
-h1 {
-    background-color: rgb(0, 0, 188);
-    }
-    
-h2 {
-    background-color: rgb(0, 0, 188);
-    }
 </style>
 
 
@@ -67,7 +59,14 @@ h2 {
     
     <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHTbwStdUBzmtvMgJKw1csgqVQnG8cGC3dHqXK5WM7dFMvAePxDsa0MFQ:
                          https://upload.wikimedia.org/wikipedia/commons/f/fc/Mandel_zoom_08_satellite_antenna.jpg">
-
+<script>
+    draw = function() {
+    noStroke();
+    fill(9, 92, 226);
     
+    if(mouseIsPressed) {
+    ellipse(mouseX, mouseY, 20, 20);}
+};
+</script>
+
 </body>
-</html>
